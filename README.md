@@ -27,12 +27,23 @@ or
 
 ```
 gradlew bootRun
+
+(needs JAVA_HOME defined)
 ```
 
+or
+
+```
+sh start.sh
+
+(needs JAVA_HOME defined)
+```
 **How to perform the tests?**
 
 ```
 gradlew test
+
+(needs JAVA_HOME defined)
 ```
 
 **API documentation**

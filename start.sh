@@ -1,4 +1,4 @@
 #! /bin/sh
 
-gradle clean bootRun -PdebugPort=8000  --debug;
+./gradlew bootRun -Dorg.gradle.java.home=$JAVA_HOME
 
