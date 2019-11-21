@@ -20,7 +20,7 @@ public class DuplicationServiceImpl implements DuplicationService {
     @Override
     public boolean validate(@NonNull LocalDate dateOfBirth,
                             @NonNull String ssn) {
-        User user = User.builder()
+        final User user = User.builder()
                 .dateOfBirth(dateOfBirth)
                 .ssn(ssn)
                 .build();

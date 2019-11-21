@@ -39,7 +39,7 @@ public class RegisterUserServiceImpl implements RegisterUserService {
 
     private void validateExcludedUser(User user) {
         /*Converting LocalDate to string because the given interface has dateOfBirth as string*/
-        String dateOfBirth = user.getDateOfBirth().format(ISO_LOCAL_DATE);
+        final String dateOfBirth = user.getDateOfBirth().format(ISO_LOCAL_DATE);
 
         if (!exclusionService.validate(dateOfBirth, user.getSsn())) {
             throw new IllegalStateException("User is blocked");

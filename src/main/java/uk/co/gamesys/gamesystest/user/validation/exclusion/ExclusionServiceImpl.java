@@ -22,7 +22,7 @@ public class ExclusionServiceImpl implements ExclusionService {
     public boolean validate(@NonNull String dateOfBirth,
                             @NonNull String ssn) {
 
-        User user = User.builder()
+        final User user = User.builder()
                 .dateOfBirth(parse(dateOfBirth, ISO_LOCAL_DATE))
                 .ssn(ssn)
                 .build();
